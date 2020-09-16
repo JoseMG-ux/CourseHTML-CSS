@@ -336,6 +336,25 @@ ul{
           grid-template-columns: 1fr;
      }
 }
+
+.love svg {
+     height: 1.90rem;
+}
+
+.heart {
+     fill: red;
+     position: relative;
+     top: 1px;
+     width: 50px;
+     animation: pulse .9s infinite;
+     transform-origin: center;
+}
+
+@keyframes pulse {
+     from { transform: none; }
+     50% { transform: scale(1.4); }
+     to { transform: none; }
+}
 .signature {
      display: flex;
      justify-content: center;
@@ -343,22 +362,4 @@ ul{
      border-top: 1px solid #1c293f;
      color: #5d6c89;
      font-weight: 500;
-}
-
-.love svg {
-     height: 1.75rem;
-}
-.heart {
-     fill: red;
-     position: relative;
-     top: 1px;
-     width: 50px;
-     animation: pulse .9s infinite;
-	transform-origin: center;
-}
-
-@keyframes pulse {
-     from { transform: none; }
-     50% { transform: scale(1.4); }
-     to { transform: none; }
 }
